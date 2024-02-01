@@ -13,7 +13,6 @@ window.speechSynthesis.onvoiceschanged = (e) => {
 
     voices.forEach((voice, index) => {
         voicesSelect.options[index] = new Option(voice.name, index)
-        console.log(voicesSelect.options[index], voice.name, index);
     })
 }
 
@@ -24,11 +23,13 @@ voicesSelect.addEventListener("change", (e) => {
 
 
 const listenVoice = (e) => {
+
     msg.text = userInp.value;
     window.speechSynthesis.speak(msg)
     console.log('funtion is still working', userInp.value);
+   
 }
 
 
+
 listenBtn.addEventListener("click", listenVoice)
-// pauseBtn.addEventListener("click", pauseBtnVoice)

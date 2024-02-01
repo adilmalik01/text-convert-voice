@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text To Speech</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <textarea name="" id="userText" cols="40" rows="10"></textarea>
-    <button class="listenBtn">Listen</button>
-    <button class="pauseBtn">pause</button>
+    <div class="wrapper">
+        <div class="main">
+            <div class="head">
+                <h3>Text To Speech <span> Converter </span></h3>
+            </div>
+            <textarea name="" id="userText" cols="40" rows="10"></textarea>
+            <div class="lowerDiv">
+                <select name="" class="lang" id="">
 
-    <select name="" class="lang" id="">
+                </select>
+                <button class="listenBtn">Listen</button>
+            </div>
+        </div>
+        <img src="https://v.fastcdn.co/u/f054cc68/63020974-0-Group-10566.png" id="left" alt="">
 
-    </select>
-
+        <img src="https://v.fastcdn.co/u/f054cc68/63020970-0-Group-10565.png" alt="">
+    </div>
 
 
     <script type="module" src="app.js"></script>
